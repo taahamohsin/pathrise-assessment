@@ -1,2 +1,1 @@
-api: bundle exec rails s
-web: ./bin/webpack
+web: bundle exec rails s -p 3000 && ./bin/webpack
