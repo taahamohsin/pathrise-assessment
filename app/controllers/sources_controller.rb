@@ -1,5 +1,5 @@
 class SourcesController < ApplicationController
-  skip_before_action :verify_authenticity_token, except: [:index]
+  skip_before_action :verify_authenticity_token
 
   def index
     sanitized_params = sources_index_params

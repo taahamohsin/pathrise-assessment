@@ -5,7 +5,7 @@ class OpportunitiesController < ApplicationController
     sanitized_params = opportunities_create_params
     opportunities = Opportunity.parse_file(params[:file])
 
-    render json: opportunities
+    render json: opportunities, each_serializer: OpportunitySerializer, adapter: :attributes
   end
 
   private

@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_03_01_052232) do
 
   create_table "opportunities", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci", force: :cascade do |t|
-    t.string "id", null: false
+    t.string "id", null: false, primary_key: true
     t.string "job_title"
     t.string "company_name"
     t.text "job_url"
