@@ -19,4 +19,4 @@ test:
 
 production:
   <<: *default
-  database: ENV['JAWS_DB_URL']
+  database: ENV['JAWSDB_URL']
