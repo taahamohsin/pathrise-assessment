@@ -20,4 +20,9 @@ test:
 
 production:
   <<: *default
-  url: ENV['JAWSDB_URL']
+  host: DB['DB_HOST']
+  database: ENV['DB_NAME']
+  username: ENV['DB_USERNAME']
+  password: ENV['DB_PASSWORD']
+
+
