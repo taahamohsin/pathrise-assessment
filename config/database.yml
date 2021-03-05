@@ -19,4 +19,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: ENV['DB_HOST']
+  username: ENV['DB_USERNAME']
+  password: ENV['DB_PASSWORD']

@@ -1,4 +1,16 @@
-# README
+# Job Source Tracker
+
+## Installation
+
+I recommend using [nvm](https://github.com/nvm-sh/nvm) and [rvm](https://rvm.io/) to ensure you're using the correct versions of node and ruby, respectively. Once you've got those set up, please run `nvm use` and `rvm use` from the project root. Then run `yarn install` or just `yarn`, and `bundle install` or just `bundle` to install the project's dependencies.
+
+## Running the project
+
+To run the rails server locally, please run `bundle exec rails s` from the project root. Similarly, to run the webpack server for the frontend, run `./bin/webpack-dev-server`
+
+Please note: you may need to change the DB password in `database.yml` if your root password is different from what is specified in the file.
+
+
 
 | Source | Count |
 | --- | ----------- |
