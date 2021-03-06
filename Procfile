@@ -1,1 +1,1 @@
-web: bundle exec rails s -p 3000 && ./bin/webpack
+web: bundle exec rails s -p ${PORT:-3000} && ./bin/webpack
